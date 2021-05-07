@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    background-color: black;
 }
 .white{
     color: white;
@@ -13,12 +14,16 @@ body{
 .margin-right5{
     margin-right: 5px;
 }
-
+ul {
+    list-style: none;
+}
+.font24{
+    font-size: 24px;
+}
 /* FINE COMMONS  */
 /* header  */
 header{
     height: 80px;
-    background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,7 +44,6 @@ header button{
 main{
     max-width: 1480px;
     height: calc(100vh - 160px);
-    background-color: black;
     overflow-y: auto;
 
 }
@@ -76,7 +80,31 @@ main{
 /* footer  */
 footer{
     height: 80px;
-    background-color: green;
+    border-top: rgba(255,255,255,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer nav.lato{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+footer nav.centrale{
+    flex-basis: 0;
+    flex-grow: 4;
+}
+footer li{
+    height: 100%;
+    margin: 0 5px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+footer .box-arrow{
+    margin-left: 10px;
+    font-size: 14px;
 }
 /* ANIMAZIONI */
 button:hover{
