@@ -1,5 +1,42 @@
+/* COMMONS  */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Lato', sans-serif;
+}
+.white{
+    color: white;
+}
+.margin-right5{
+    margin-right: 5px;
+}
+
+/* FINE COMMONS  */
+header{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+header button{
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ANIMAZIONI */
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.4);
+}
+/* FINE ANIMAZIONI */
