@@ -15,13 +15,15 @@ body{
 }
 
 /* FINE COMMONS  */
+/* header  */
 header{
     height: 80px;
     background-color: black;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 header button{
     margin: 0 10px;
@@ -33,7 +35,46 @@ header button{
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
 }
+/* main  */
+main{
+    max-width: 1480px;
+    height: calc(100vh - 160px);
+    background-color: black;
+    overflow-y: auto;
 
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.utente{
+    width: calc(100% / 6 - 1px);
+    height: 150px;
+    border: 3px solid black;
+    position: relative;
+
+}
+.utente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.utente .nome-utente{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+/* footer  */
+footer{
+    height: 80px;
+    background-color: green;
+}
 /* ANIMAZIONI */
 button:hover{
     cursor: pointer;
