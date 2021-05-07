@@ -11,11 +11,11 @@ body{
 .white{
     color: white;
 }
+.green{
+    color: green;
+}
 .margin-right5{
     margin-right: 5px;
-}
-ul {
-    list-style: none;
 }
 .font24{
     font-size: 24px;
@@ -88,24 +88,47 @@ footer{
 footer nav.lato{
     flex-basis: 0;
     flex-grow: 1;
+    height: 100%;
 }
 footer nav.centrale{
     flex-basis: 0;
     flex-grow: 4;
+    height: 100%;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 footer li{
     height: 100%;
     margin: 0 5px;
-    display: inline-block;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+    list-style: none;
 }
 footer .box-arrow{
     margin-left: 10px;
     font-size: 14px;
 }
+footer .lato.destra{
+   display: flex;
+   justify-content: flex-end;
+}
+footer .lato .close{
+    background-color: gray;
+    height: 100%;
+    line-height: 80px;
+ }
+ .lato .close span{
+     color: red;
+     margin: 0 10px;
+ }
+/* .lato.destra .close{
+    padding: 10px;
+} */
 /* ANIMAZIONI */
 button:hover{
     cursor: pointer;
