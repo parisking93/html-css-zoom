@@ -26,6 +26,7 @@ button{
     border: 0;
     font-size: 14px;
     text-transform: capitalize;
+    padding: 5px;
 }
 /* FINE COMMONS  */
 /* header  */
@@ -78,8 +79,6 @@ main{
     font-size: 14px;
     background-color: rgba(0,0,0,0.4);
     border-radius: 5px;
-    padding: 5px;
-    text-transform: capitalize;
 }
 /* footer  */
 footer{
@@ -98,19 +97,20 @@ footer nav.centrale{
     flex-grow: 8;
     height: 100%;
 }
-footer ul{
+footer ul.senior{
     display: flex;
     justify-content: center;
     height: 100%;
+    list-style: none;
+
 }
 footer li{
     height: 100%;
-    margin: 0 5px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    list-style: none;
+    position: relative;
 }
 footer .box-arrow{
     margin-left: 10px;
@@ -129,6 +129,28 @@ footer .lato .close{
      height: 100%;
      padding: 0 5px;
  }
+ footer .box-hidden{
+     width: 160px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     transform: translateY(-100%);
+     background-color: black;
+     padding: 5px 0;
+     border-radius: 5px 5px 0 0;
+     display: none;
+
+ }
+ .box-hidden li{
+    padding: 5px 0 5px 10px;
+    margin: 5px 0;
+ }
+ i.hidden{
+     display: none;
+ }
+ div.hidden{
+     display: none;
+ }
 /* .lato.destra .close{
     padding: 10px;
 } */
@@ -138,6 +160,27 @@ button:hover{
 }
 header button:hover{
     background-color: rgba(255,255,255,0.4);
+}
+footer li:hover .box-hidden{
+    display: block;
+}
+footer li:active i.hidden{
+    display: block;
+}
+footer li:active i.show{
+    display: none;
+}
+footer li:active div.show{
+    display: none;
+}
+footer li:active div.hidden{
+    display: block;
+}
+.box-hidden li:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.box-hidden li:active{
+    background-color: rgba(255,255,255,0.3);
 }
 
 /* FINE ANIMAZIONI */
