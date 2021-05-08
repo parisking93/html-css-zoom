@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Itim', cursive;  
     background-color: black;
 }
 .white{
@@ -17,6 +17,10 @@ body{
 .margin-right5{
     margin-right: 5px;
 }
+.margin-left5{
+    margin-left: 5px;
+}
+
 .font28{
     font-size: 28px;
     margin-bottom: 5px;
@@ -27,6 +31,7 @@ button{
     font-size: 14px;
     text-transform: capitalize;
     padding: 5px;
+    font-family: 'Lato', sans-serif;
 }
 /* FINE COMMONS  */
 /* header  */
@@ -36,7 +41,6 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 5px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 header button{
     margin: 0 10px;
@@ -77,8 +81,10 @@ main{
     bottom: 0;
     left: 0;
     font-size: 14px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
+    padding: 2px 5px;
+    text-transform: capitalize;
 }
 /* footer  */
 footer{
@@ -87,6 +93,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #111111;
 }
 footer nav.lato{
     flex-flow: 1 0;
@@ -111,10 +118,7 @@ footer li{
     padding: 5px;
     text-align: center;
     position: relative;
-}
-footer .box-arrow{
-    margin-left: 10px;
-}
+} 
 footer .lato.destra{
    display: flex;
    justify-content: flex-end;
@@ -135,7 +139,7 @@ footer .lato .close{
      top: 0;
      left: 0;
      transform: translateY(-100%);
-     background-color: black;
+     background-color: #111111;
      padding: 5px 0;
      border-radius: 5px 5px 0 0;
      display: none;
@@ -145,15 +149,9 @@ footer .lato .close{
     padding: 5px 0 5px 10px;
     margin: 5px 0;
  }
- i.hidden{
+ i.hidden, div.hidden{
      display: none;
  }
- div.hidden{
-     display: none;
- }
-/* .lato.destra .close{
-    padding: 10px;
-} */
 /* ANIMAZIONI */
 button:hover{
     cursor: pointer;
@@ -161,20 +159,11 @@ button:hover{
 header button:hover{
     background-color: rgba(255,255,255,0.4);
 }
-footer li:hover .box-hidden{
+footer li:hover .box-hidden, footer li:active i.hidden, footer li:active div.hidden{
     display: block;
 }
-footer li:active i.hidden{
-    display: block;
-}
-footer li:active i.show{
+footer li:active i.show, footer li:active div.show{
     display: none;
-}
-footer li:active div.show{
-    display: none;
-}
-footer li:active div.hidden{
-    display: block;
 }
 .box-hidden li:hover{
     background-color: rgba(255,255,255,0.3);
