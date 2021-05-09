@@ -51,7 +51,6 @@ header button{
 }
 /* main  */
 main{
-    max-width: 1480px;
     height: calc(100vh - 160px);
     overflow-y: auto;
 
@@ -111,12 +110,11 @@ footer ul.senior{
     list-style: none;
 
 }
-footer li{
+footer ul li{
     height: 100%;
     display: flex;
     align-items: center;
     padding: 5px;
-    text-align: center;
     position: relative;
 } 
 footer .lato.destra{
@@ -143,11 +141,14 @@ footer .lato .close{
      padding: 5px 0;
      border-radius: 5px 5px 0 0;
      display: none;
-
+ }
+ footer .box-hidden.big{
+    width: 250px;
  }
  .box-hidden li{
     padding: 5px 0 5px 10px;
     margin: 5px 0;
+    transition: all 0.3s ease;
  }
  i.hidden, div.hidden{
      display: none;
